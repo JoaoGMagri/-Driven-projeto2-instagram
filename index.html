@@ -1,0 +1,405 @@
+<!-- Olhar os icones que devem ser feitas de forma diferente -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link rel="stylesheet" href="css\reset.css" />
+        <link rel="stylesheet" href="css\style.css" />
+    </head>
+    
+    <body>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <!-- Página toda inicio -->
+        <div class="website">
+            <!-- Menu topo inicio -->
+            <div class="menu-topo">
+                
+                <div class="esquerda">
+                    
+                    <!--logo inicio -->
+                    <div class="logo">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </div>
+                    <!--logo fim -->
+                    
+                    <div class="linha-vertical"></div>
+    
+                    <!-- nome do site inicio -->
+                    <div class="nome-site">
+                        <img src="image\logo.png" alt="nome do site">
+                    </div>
+                    <!-- nome do site fim -->
+
+                </div>
+
+                <div class="barra-de-pesquisa">
+
+                    <input type="text" id="txtBusca" placeholder="Pesquisar" />
+                
+                </div>
+
+                <div class="direita">
+                    <div class="icone-mensagem">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                    </div>
+
+                    <div class="icone-explore">
+                        <ion-icon name="compass-outline"></ion-icon>
+                    </div>
+
+                    <div class="icone-notificacao">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+
+                    <div class="icone-contato">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Menu topo fim -->
+
+            <!-- Menu mobile inicio -->
+            <div class="menu-mobile">
+
+                <div class="superior">
+                    
+                    <ion-icon name="logo-instagram"></ion-icon>
+
+                    <img src="image\logo.png" alt="nome do site">
+
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+
+                </div>
+
+
+                <div class="inferior">
+                    <ion-icon name="home-sharp"></ion-icon>
+
+                    <ion-icon name="search-outline"></ion-icon>
+
+                    <ion-icon name="add-circle-outline"></ion-icon>
+
+                    <ion-icon name="heart-outline"></ion-icon>
+
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+
+            </div>
+            <!-- Menu mobile fim -->
+
+            <!-- Corpo inicio -->
+            <div class="corpo">
+                <div class="post">
+
+                    <div class="stories">
+                        <div class="store">
+                            <div class="fundo">
+                                <img src="image\stories_background.jpg" alt="fundo dos stories">
+                                <div class="image-do-usuario">
+                                    <img src="https://store-images.s-microsoft.com/image/apps.62658.13510798887535185.562f3221-1a02-413c-968b-157fa2b27543.0cec1aa2-d48e-4855-ad8c-494b3c64f3ea" alt="Foto do usuario">
+                                </div>
+                            </div>
+                            <p>9gag</p>
+                        </div>
+
+                        <div class="store">
+                            <div class="fundo">
+                                <img src="image\stories_background.jpg" alt="fundo dos stories">
+                                <div class="image-do-usuario">
+                                    <img src="data:image/png;base64,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" alt="Foto do usuario">
+                                </div>
+                            </div>
+                            <p>meowed</p>
+                        </div>
+
+                        <div class="store">
+                            <div class="fundo">
+                                <img src="image\stories_background.jpg" alt="fundo dos stories">
+                                <div class="image-do-usuario">
+                                    <img src="data:image/png;base64,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" alt="Foto do usuario">
+                                </div>
+                            </div>
+                            <p>barked</p>
+                        </div>
+
+                        <div class="store">
+                            <div class="fundo">
+                                <img src="image\stories_background.jpg" alt="fundo dos stories">
+                                <div class="image-do-usuario">
+                                    <img src="https://cdn-images.threadless.com/threadless-media/artist_shops/shops/nathanwpyle/products/943259/shirt-1551999610-350b023a4f522ef32fb091d850f58cb5.png?v=3&d=eyJvbmx5X21ldGEiOiBmYWxzZSwgImZvcmNlIjogZmFsc2UsICJvcHMiOiBbWyJ0cmltIiwgW2ZhbHNlLCBmYWxzZV0sIHt9XSwgWyJyZXNpemUiLCBbXSwgeyJ3aWR0aCI6IDk5Ni4wLCAiYWxsb3dfdXAiOiBmYWxzZSwgImhlaWdodCI6IDk5Ni4wfV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzEyMDAsIDEyMDBdLCB7ImJhY2tncm91bmQiOiAiOTQ4MWMzIn1dXX0=" alt="Foto do usuario">
+                                </div>
+                            </div>
+                            <p>nathanwpyle...</p>
+                        </div>
+
+                        <div class="store">
+                            <div class="fundo">
+                                <img src="image\stories_background.jpg" alt="fundo dos stories">
+                                <div class="image-do-usuario">
+                                    <img src="https://static.wixstatic.com/media/77e14e_cc710e271a604ba39da6860d134c04d2~mv2.png/v1/fit/w_2500,h_1330,al_c/77e14e_cc710e271a604ba39da6860d134c04d2~mv2.png" alt="Foto do usuario">
+                                </div>
+                            </div>
+                            <p>wawawiwac...</p>
+                        </div>
+
+                        <div class="store">
+                            <div class="fundo">
+                                <img src="image\stories_background.jpg" alt="fundo dos stories">
+                                <div class="image-do-usuario">
+                                    <img src="https://yt3.ggpht.com/ytc/AMLnZu_L-05PUBhhBVLz4cWX3XMzEQHB-TtJtNdpEytRJQ=s900-c-k-c0x00ffffff-no-rj" alt="Foto do usuario">
+                                </div>
+                            </div>   
+                            <p>respondeai</p>
+                        </div>
+
+                        <div class="store">
+                            <div class="fundo">
+                                <img src="image\stories_background.jpg" alt="fundo dos stories">
+                                <div class="image-do-usuario">
+                                    <img src="https://storage.googleapis.com/ares-profile-pictures/hd/loja.filomoderna-ebd0af6e1a53a2d39a0b13053388d6ac_hd.jpg" alt="Foto do usuario">
+                                </div>
+                            </div>
+                            <p>filomoderna</p>
+                        </div>
+
+                        <div class="store">
+                            <div class="fundo">
+                                <img src="image\stories_background.jpg" alt="fundo dos stories">
+                                <div class="image-do-usuario">
+                                    <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/memeriagourmet.jpg" alt="Foto do usuario">
+                                </div>
+                            </div>
+                            <p>memeriago.</p>
+                        </div>
+
+                        <div class="botao-lateral">
+                            <ion-icon name="chevron-forward-circle-sharp"></ion-icon>
+                        </div>
+                    </div>
+
+                    <!-- Publicação 1 -->
+                    <div class="publicacao">
+                        <div class="perfil-da-publicacao">
+                            <div class="perfil-publicado">
+                                <img src="data:image/png;base64,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" alt="Foto do usuario">
+                                <p>meowed</p>
+                            </div>
+
+                            <div>
+                                <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="imagem-da-publicacao">
+                            <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/coby-the-cat.jpg" alt="Foto do usuario">
+                        </div>
+
+                        <div class="interasoes">
+                            <div class="reacoes">
+                                <div><ion-icon name="heart-outline"></ion-icon></div>
+                                <div><ion-icon name="chatbubble-outline"></ion-icon></div>
+                                <div><ion-icon name="paper-plane-outline"></ion-icon></div>
+                                
+                                
+                            </div>
+
+                            <div class="salvar">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <div class="curtidas">
+                            <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/respondeai.jpg" alt="Foto do usuario">
+                            <p>Curtido por <h1>respondeai</h1> <p>e</p> <h1>101.523 pessoas</h1></p>
+                        </div>
+                    </div>
+
+                    <!-- Publicação 2 -->
+                    <div class="publicacao">
+                        <div class="perfil-da-publicacao">
+                            <div class="perfil-publicado">
+                                <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/barked.jpg" alt="Foto do usuario">
+                                <p>barked</p>
+                            </div>
+
+                            <div>
+                                <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="imagem-da-publicacao">
+                            <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/bennieandmaple.jpg" alt="Foto do usuario">
+                        </div>
+
+                        <div class="interasoes">
+                            <div class="reacoes">
+                                <div><ion-icon name="heart-outline"></ion-icon></div>
+                                <div><ion-icon name="chatbubble-outline"></ion-icon></div>
+                                <div><ion-icon name="paper-plane-outline"></ion-icon></div>
+                                
+                                
+                            </div>
+
+                            <div class="salvar">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <div class="curtidas">
+                            <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/adorableanimals.jpg" alt="Foto do usuario">
+                            <p>Curtido por <h1>respondeai</h1> <p>e</p> <h1>101.523 pessoas</h1></p>
+                        </div>
+                    </div>
+
+                    <!-- Publicação 3 -->
+                    <div class="publicacao">
+                        <div class="perfil-da-publicacao">
+                            <div class="perfil-publicado">
+                                <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/razoesparaacreditar.jpg" alt="Foto do usuario">
+                                <p>razoesparaacreditar</p>
+                            </div>
+
+                            <div>
+                                <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                            </div>
+                        </div>
+                        <video width="100%" controls autoplay="autoplay">
+                            <source src="image\video.mp4" type="video/mp4">
+                            <source src="image\video.ogv" type="video/ogg">
+                        </video>
+
+                        <div class="interasoes">
+                            <div class="reacoes">
+                                <div><ion-icon name="heart-outline"></ion-icon></div>
+                                <div><ion-icon name="chatbubble-outline"></ion-icon></div>
+                                <div><ion-icon name="paper-plane-outline"></ion-icon></div>
+                                
+                                
+                            </div>
+
+                            <div class="salvar">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <div class="curtidas">
+                            <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/badvibes.jpg" alt="Foto do usuario">
+                            <p>Curtido por <h1>respondeai</h1> <p>e</p> <h1>101.523 pessoas</h1></p>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                <div class="side-bar">
+
+                    <div class="usuario">
+                        <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/catana.jpg" alt="Foto do usuario">
+                        <div class="nome-do-usuario">
+                            <h1>catanacomics</h1>
+                            <h2>Catana</h2>
+                        </div>
+                    </div>
+                
+                    <div class="sugestao">
+                        <h1>Sugestões para você</h1>
+                        <p>Ver tudo</p>
+                    </div>
+                    
+                    <div class="perfis">
+                        <!-- Perfil sugerido 1 -->
+                        <div class="perfis-sugeridos">
+                            <div class="perfil">
+                                <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/badvibes.jpg" alt="Foto do usuario">
+                                <div class="nome-do-usuario">
+                                    <h1>bad.vibes.memes</h1>
+                                    <h2>Segue você</h2>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Seguir</h3>
+                            </div>
+                        </div>
+    
+                        <!-- Perfil sugerido 2 -->
+                        <div class="perfis-sugeridos">
+                            <div class="perfil">
+                                <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/chibird.jpg" alt="Foto do usuario">
+                                <div class="nome-do-usuario">
+                                    <h1>chibirdart</h1>
+                                    <h2>Segue você</h2>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Seguir</h3>
+                            </div>
+                        </div>
+    
+                        <!-- Perfil sugerido 3 -->
+                        <div class="perfis-sugeridos">
+                            <div class="perfil">
+                                <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/razoesparaacreditar.jpg" alt="Foto do usuario">
+                                <div class="nome-do-usuario">
+                                    <h1>razoesparaacreditar</h1>
+                                    <h2>Novo no Instagram</h2>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Seguir</h3>
+                            </div>
+                        </div>
+    
+                        <!-- Perfil sugerido 4 -->
+                        <div class="perfis-sugeridos">
+                            <div class="perfil">
+                                <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/adorableanimals.jpg" alt="Foto do usuario">
+                                <div class="nome-do-usuario">
+                                    <h1>adorable_animals</h1>
+                                    <h2>Segue você</h2>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Seguir</h3>
+                            </div>
+                        </div>
+    
+                        <!-- Perfil sugerido 5 -->
+                        <div class="perfis-sugeridos">
+                            <div class="perfil">
+                                <img src="https://instagram-react-ruineto-dev.vercel.app/assets/img/smallcats.jpg" alt="Foto do usuario">
+                                <div class="nome-do-usuario">
+                                    <h1>smallcutecats</h1>
+                                    <h2>Segue você</h2>
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Seguir</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sobre">
+                        <p>
+                            Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
+                        </p>
+                    </div>
+
+                    <div class="sobre">
+                        <p>
+                            © 2021 INSTAGRAM DO FACEBOOK
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Corpo fim -->
+        </div>
+        <!-- Página toda fim -->
+
+        
+    </body>
+</html>
